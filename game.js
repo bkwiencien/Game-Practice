@@ -58,10 +58,8 @@ element.innerHTML = "Computer choce: " + x;
 }
 function asses(x) {
 if (x == "RR" || x == "SS" || x == "PP") {
- console.log("Ties were " + Ties);
  Ties++;
  var element = document.getElementById("ties");
- console.log("innerHTML = " +element.innerHTML);
  element.innerHTML = "Ties: " + Ties;
 }
 if (x == "RS") {
@@ -71,7 +69,13 @@ if (x == "RS") {
 }
 if ( x == "SR") {
   ComputerWins++;
-  var elemnet = document.getElememntById("computerwins");
+  var element = document.getElementById("computerwins");
+  element.innerHTML = "Computer wins: " + ComputerWins;
+}
+if (x == "RP") {
+  console.log(x);
+  ComputerWins++;
+  var element = document.getElementById("computerwins");
   element.innerHTML = "Computer wins: " + ComputerWins;
 }
 }
