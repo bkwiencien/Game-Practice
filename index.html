@@ -3,15 +3,14 @@
     	<meta charset="UTF-8">
     	<title>Rock, Paper, Scissors</title>
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script type="javascript" src="game.js"></script> 
-        <script src="jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="panel panel-default">
     	<div class="panel-body"><h1>Choose</h1> <br/>
-			<button onclick=“rockClick()" type="button" class="btn btn-info" style="padding:">Rock</button>
-			<button onclick=“myFunction()" type="button" class="btn btn-primary">Paper</button>
-			<button onclick=“buttonClick()" type="button" class="btn btn-success">Scissor</button>
+                        <button onclick="rock()" class="btn-info">Rock</button>
+                        <button onclick="paper()" class="btn-info">Paper</button>
+                        <button onclick="scissors()" class="btn-info">Scissors</button>
 		</div>	
 		</div>
         <div class="container-fluid">
@@ -41,5 +40,6 @@
         <div>
       </div>
       </div>
+         <script type="text/javascript" src="game.js"></script>
 	</body>
 </html>
