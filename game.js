@@ -1,6 +1,6 @@
  Ties = Ties + 1;
 var ComputerWins = 0;
-var Userins = 0;
+var Userwins = 0;
 var Ties    = 0;
 var netresult = "  ";
 function rock() {
@@ -60,10 +60,15 @@ function asses(x) {
 if (x == "RR" || x == "SS" || x == "PP") {
  console.log("Ties were " + Ties);
  Ties++;
- console.log("Ties is "+ Ties);
- console.log("in asses " + x);
  var element = document.getElementById("ties");
  console.log("innerHTML = " +element.innerHTML);
  element.innerHTML = "Ties: " + Ties;
+}
+if (x == "RS") {
+  console.log("user wins");
+  Userwins++;
+  var element = document.getElementById("userwins");
+  console.log("in user wins " + element);
+  element.innerHTML = ("Your wins: " + Userwins);
 }
 }
