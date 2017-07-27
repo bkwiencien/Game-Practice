@@ -65,10 +65,13 @@ if (x == "RR" || x == "SS" || x == "PP") {
  element.innerHTML = "Ties: " + Ties;
 }
 if (x == "RS") {
-  console.log("user wins");
   Userwins++;
   var element = document.getElementById("userwins");
-  console.log("in user wins " + element);
   element.innerHTML = ("Your wins: " + Userwins);
+}
+if ( x == "SR") {
+  ComputerWins++;
+  var elemnet = document.getElememntById("computerwins");
+  element.innerHTML = "Computer wins: " + ComputerWins;
 }
 }
