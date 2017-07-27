@@ -3,6 +3,8 @@ var Userwins = 0;
 var Ties    = 0;
 var netresult = "  ";
 var ursername = " ";
+function reset() {
+}
 function rock() {
 var computerchoice="";
 var result;
