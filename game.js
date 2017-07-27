@@ -72,6 +72,11 @@ if ( x == "SR") {
   var element = document.getElementById("computerwins");
   element.innerHTML = "Computer wins: " + ComputerWins;
 }
+if ( x == "SP") {
+  Userwins++;
+  var element = document.getElementById("userwins");
+  element.innerHTML = "Your wins: " + Userwins;
+}
 if (x == "RP") {
   console.log(x);
   ComputerWins++;
