@@ -78,9 +78,18 @@ if ( x == "SP") {
   element.innerHTML = "Your wins: " + Userwins;
 }
 if (x == "RP") {
-  console.log(x);
   ComputerWins++;
   var element = document.getElementById("computerwins");
   element.innerHTML = "Computer wins: " + ComputerWins;
+}
+if (x == "PS") {
+  ComputerWins++;
+  var element = document.getElementById("computerwins");
+  element.innerHTML = "Computer wins: " + ComputerWins;
+}
+if ( x == "PR") {
+  Userwins++;
+  var element = document.getElementById("userwins");
+  element.innerHTML = "Your wins: " + Userwins;
 }
 }
