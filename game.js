@@ -1,3 +1,4 @@
+ Ties = Ties + 1;
 var ComputerWins = 0;
 var Userins = 0;
 var Ties    = 0;
@@ -10,6 +11,7 @@ var result;
    updatecomputerChoose(computerchoice);
    result = "R" + computerchoice;
    netresult = "R" + computerchoice;
+   asses(netresult);
    return("R");
 }
 function paper(){
@@ -17,6 +19,7 @@ function paper(){
   computerchoice = computerChose();
   updatecomputerChoose(computerchoice);
   netresult = "P" + computerchoice;
+  asses(netresult);
   return("P");
 }
 function scissors(){
@@ -25,6 +28,7 @@ function scissors(){
  computerchoice = computerChose();
  updatecomputerChoose(computerchoice);
  netresult = "S" + computerchoice;
+ asses(netresult);
  return("S");
 }
 function computerChose(){
@@ -47,9 +51,19 @@ function updateYouChoose(x) {
 var YourChoice = x;
 var element = document.getElementById("youchoose");
 element.innerHTML = "You Chose: " + x;
-console.log(element);
 }
 function updatecomputerChoose(x) {
 var element = document.getElementById("computerchose");
 element.innerHTML = "Computer choce: " + x;
+}
+function asses(x) {
+if (x == "RR" || x == "SS" || x == "PP") {
+ console.log("Ties were " + Ties);
+ Ties++;
+ console.log("Ties is "+ Ties);
+ console.log("in asses " + x);
+ var element = document.getElementById("ties");
+ console.log("innerHTML = " +element.innerHTML);
+ element.innerHTML = "Ties: " + Ties;
+}
 }
