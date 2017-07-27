@@ -1,24 +1,30 @@
 var ComputerWins = 0;
 var Userins = 0;
 var Ties    = 0;
+var netresult = "  ";
 function rock() {
 var computerchoice="";
 var result;
-   console.log("R");
    updateYouChoose("R");
    computerchoice = computerChose();
    updatecomputerChoose(computerchoice);
    result = "R" + computerchoice;
+   netresult = "R" + computerchoice;
    return("R");
 }
 function paper(){
   updateYouChoose("P");
-  console.log("P");
+  computerchoice = computerChose();
+  updatecomputerChoose(computerchoice);
+  netresult = "P" + computerchoice;
   return("P");
 }
 function scissors(){
+ var result;
  updateYouChoose("S");
- console.log("S");
+ computerchoice = computerChose();
+ updatecomputerChoose(computerchoice);
+ netresult = "S" + computerchoice;
  return("S");
 }
 function computerChose(){
